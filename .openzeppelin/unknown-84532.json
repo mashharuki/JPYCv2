@@ -1,0 +1,282 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x7de91d76b13440A69C54375c337828C6c64dc268",
+      "txHash": "0x8f3437c1862711d884ab2e74304baf23cb3b4c89c675cddea95b34cf4d687f20",
+      "kind": "uups"
+    },
+    {
+      "address": "0x5a2f20Cbebf02fA5e5D928400A5429A27b2cB6C8",
+      "txHash": "0x872685708de4c51c8e58f1f7ae320fe00fe3024a1258902d7808fa97e494f7ab",
+      "kind": "uups"
+    },
+    {
+      "address": "0xEf0De566EbD67C95Af4c236cB08d071F9e0a210B",
+      "txHash": "0x5013d4d0db2e1dfa953264f6a1edccbcf390413df2fd90a5d10105c225b57fe0",
+      "kind": "uups"
+    },
+    {
+      "address": "0x058551a9b8ED118411F9Aeb787d7BC6E40823ccC",
+      "txHash": "0x0ac423b8ebdb05758b624f330f0e31bf3ce405b0e19bfb85ff3604043a54c16d",
+      "kind": "uups"
+    },
+    {
+      "address": "0xda683fe053b4344F3Aa5Db6Cbaf3046F7755e5E1",
+      "txHash": "0x6ebc2bae130a2fcd44bd3cd974512c784e553f99b259c72ba48ffa84b39605d1",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "38d3004afeaad4d19548f530bd4d9a5cfcaa6df0e35a23a12ce593b33799e4a8": {
+      "address": "0x3CcAF7a960277D1b629a4877eb6aca356386dD6E",
+      "txHash": "0xf686081e771a96b17e8df7df057ae77d177cea716f93a98e5bd2607388d6c0eb",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Ownable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "contracts/v1/Ownable.sol:27"
+          },
+          {
+            "contract": "Ownable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "contracts/v1/Ownable.sol:72"
+          },
+          {
+            "contract": "Pausable",
+            "label": "pauser",
+            "type": "t_address",
+            "src": "contracts/v1/Pausable.sol:56"
+          },
+          {
+            "contract": "Pausable",
+            "label": "paused",
+            "type": "t_bool",
+            "src": "contracts/v1/Pausable.sol:57"
+          },
+          {
+            "contract": "Pausable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "contracts/v1/Pausable.sol:103"
+          },
+          {
+            "contract": "Blocklistable",
+            "label": "blocklister",
+            "type": "t_address",
+            "src": "contracts/v1/Blocklistable.sol:43"
+          },
+          {
+            "contract": "Blocklistable",
+            "label": "blocklisted",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/v1/Blocklistable.sol:44"
+          },
+          {
+            "contract": "Blocklistable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "contracts/v1/Blocklistable.sol:109"
+          },
+          {
+            "contract": "Rescuable",
+            "label": "rescuer",
+            "type": "t_address",
+            "src": "contracts/v1/Rescuable.sol:42"
+          },
+          {
+            "contract": "Rescuable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "contracts/v1/Rescuable.sol:81"
+          },
+          {
+            "contract": "AbstractFiatTokenV1",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "contracts/v1/AbstractFiatTokenV1.sol:64"
+          },
+          {
+            "contract": "EIP712Domain",
+            "label": "DOMAIN_SEPARATOR",
+            "type": "t_bytes32",
+            "src": "contracts/v1/EIP712Domain.sol:45"
+          },
+          {
+            "contract": "EIP712Domain",
+            "label": "CHAIN_ID",
+            "type": "t_uint256",
+            "src": "contracts/v1/EIP712Domain.sol:46"
+          },
+          {
+            "contract": "EIP712Domain",
+            "label": "NAME",
+            "type": "t_string_storage",
+            "src": "contracts/v1/EIP712Domain.sol:47"
+          },
+          {
+            "contract": "EIP712Domain",
+            "label": "VERSION",
+            "type": "t_string_storage",
+            "src": "contracts/v1/EIP712Domain.sol:48"
+          },
+          {
+            "contract": "EIP712Domain",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "contracts/v1/EIP712Domain.sol:61"
+          },
+          {
+            "contract": "EIP3009",
+            "label": "_authorizationStates",
+            "type": "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))",
+            "src": "contracts/v1/EIP3009.sol:64"
+          },
+          {
+            "contract": "EIP3009",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "contracts/v1/EIP3009.sol:259"
+          },
+          {
+            "contract": "EIP2612",
+            "label": "_permitNonces",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/v1/EIP2612.sol:50"
+          },
+          {
+            "contract": "EIP2612",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "contracts/v1/EIP2612.sol:98"
+          },
+          {
+            "contract": "ERC1967Upgrade",
+            "label": "_gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "contracts/upgradeability/ERC1967Upgrade.sol:100"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "_gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "contracts/upgradeability/UUPSUpgradeable.sol:117"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "name",
+            "type": "t_string_storage",
+            "src": "contracts/v1/FiatTokenV1.sol:65"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "symbol",
+            "type": "t_string_storage",
+            "src": "contracts/v1/FiatTokenV1.sol:66"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "currency",
+            "type": "t_string_storage",
+            "src": "contracts/v1/FiatTokenV1.sol:67"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "totalSupply_",
+            "type": "t_uint256",
+            "src": "contracts/v1/FiatTokenV1.sol:68"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "minterAdmin",
+            "type": "t_address",
+            "src": "contracts/v1/FiatTokenV1.sol:69"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "decimals",
+            "type": "t_uint8",
+            "src": "contracts/v1/FiatTokenV1.sol:70"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "initializedVersion",
+            "type": "t_uint8",
+            "src": "contracts/v1/FiatTokenV1.sol:71"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/v1/FiatTokenV1.sol:73"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "allowed",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "contracts/v1/FiatTokenV1.sol:74"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "minters",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/v1/FiatTokenV1.sol:75"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "minterAllowed",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/v1/FiatTokenV1.sol:76"
+          },
+          {
+            "contract": "FiatTokenV1",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "contracts/v1/FiatTokenV1.sol:604"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))": {
+            "label": "mapping(address => mapping(bytes32 => uint256))"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          }
+        }
+      }
+    }
+  }
+}

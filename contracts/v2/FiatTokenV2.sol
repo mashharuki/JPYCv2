@@ -640,5 +640,5 @@ contract FiatTokenV2 is
         emit AllowlisterChanged(allowlister);
     }
 
-    uint256[50] private __gap;
+    uint256[48] private __gap;
 }

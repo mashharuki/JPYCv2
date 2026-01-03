@@ -1,0 +1,19 @@
+{
+  "network": "baseSepolia",
+  "deployedAt": "2026-01-03T03:42:58.888Z",
+  "deployer": "0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072",
+  "txHash": "0x6ebc2bae130a2fcd44bd3cd974512c784e553f99b259c72ba48ffa84b39605d1",
+  "proxy": "0xda683fe053b4344F3Aa5Db6Cbaf3046F7755e5E1",
+  "implementation": "0x3CcAF7a960277D1b629a4877eb6aca356386dD6E",
+  "params": {
+    "name": "JPY Coin",
+    "symbol": "JPYC",
+    "currency": "JPY",
+    "decimals": 18,
+    "minterAdmin": "0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072",
+    "pauser": "0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072",
+    "blocklister": "0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072",
+    "rescuer": "0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072",
+    "owner": "0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072"
+  }
+}

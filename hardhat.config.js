@@ -5,9 +5,13 @@
 require('@nomiclabs/hardhat-truffle5')
 // require("@nomiclabs/hardhat-waffle")
 require('@openzeppelin/hardhat-upgrades')
+require('@nomiclabs/hardhat-etherscan')
 require('hardhat-contract-sizer')
 require('solidity-coverage')
 require('dotenv').config()
+require('./tasks/deploy')
+require('./tasks/actions')
+require('./tasks/admin')
 
 module.exports = {
   solidity: {
@@ -30,9 +34,12 @@ module.exports = {
       chainId: 1337,
       allowUnlimitedContractSize: false,
     },
-    rinkeby: {
-      url: process.env.INFRA_API_KEY,
-      accounts: [process.env.PRIVATE_KEY],
-    },
+    baseSepolia: {
+      url: `https://base-sepolia.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      accounts: [process.env.PRIVATE_KEY]
+    }
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API_KEY
   },
 }
